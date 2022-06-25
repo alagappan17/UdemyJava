@@ -26,5 +26,6 @@ public class JavaGram {
         System.out.println("Age: " + age);
         System.out.println("City: " + city);
         System.out.println("Country: " + country);
+        scan.close();
     }
 }

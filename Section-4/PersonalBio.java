@@ -5,7 +5,7 @@ public class PersonalBio {
         int year = 3;
         String degree = "B.Tech";
         String department = "Information Technology";
-        char section = 'A';
+        // char section = 'A';
         System.out.println("Hi, I'm " + name + " pursuing my " + degree + " in " + department + " at " + college
                 + ". I am currently in my " + year + "rd year.");
     }
