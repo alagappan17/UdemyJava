@@ -14,5 +14,6 @@ public class Trivia {
         if (choice.equals("a"))
             score += 5;
         System.out.println("Final Score: " + score);
+        scan.close();
     }
 }
