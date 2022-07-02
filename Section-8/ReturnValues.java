@@ -1,10 +1,22 @@
 public class ReturnValues {
     public static void main(String[] args) {
-        double area = areaOfRect(100, 4);
-        System.out.println("Area: " + area);
+        String option = "perimeter";
+        double val = measureRect(100, 4, option);
+        stringPrinter(val, option);
     }
 
-    public static double areaOfRect(double len, double wid) {
-        return len * wid;
+    public static double measureRect(double len, double wid, String option) {
+        switch (option) {
+            case "area":
+                return len * wid;
+            case "perimeter":
+                return 2 * (len + wid);
+            default:
+                return 404;
+        }
+    }
+
+    public static void stringPrinter(double val, String option) {
+        System.out.println(option + ": " + val);
     }
 }
