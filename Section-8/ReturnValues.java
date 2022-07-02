@@ -1,11 +1,15 @@
 public class ReturnValues {
     public static void main(String[] args) {
         String option = "perimeter";
-        double val = measureRect(100, 4, option);
+        double val = measureRect(-1, 4, option);
         stringPrinter(val, option);
     }
 
     public static double measureRect(double len, double wid, String option) {
+        if (len < 0 || wid < 0) {
+            System.out.println("Cannot be negative");
+            System.exit(0);
+        }
         switch (option) {
             case "area":
                 return len * wid;
